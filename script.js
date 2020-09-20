@@ -102,7 +102,6 @@ async function selectStudents() {
             let li = document.createElement('li');
             let b = document.createElement('button');
             b.classList.add('btn', 'btn-dark')
-            //write what happens if clicked 
             b.innerHTML = element.name;
 
             li.appendChild(b);

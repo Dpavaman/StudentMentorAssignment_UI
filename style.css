@@ -114,3 +114,7 @@ input[type=text], input[type = tel], input[type=email]
 ul{
     list-style-type: none;
 }
+
+li{
+    margin: 10px;
+}
