@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Management System</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div id="container-main" class="container-fluid">
+
+        
+        <div class="col">
+            <ul class="options">
+                <li><button id="addStudent" class="optionButton btn-outline-dark"
+                        onclick="displayStudentForm()"><u>Add Student</u></button></li> &nbsp;
+                <li><button id="addMentor" class="optionButton btn-outline-dark"
+                        onclick="displayMentorForm()"><u>Add Mentor</u></button></li> &nbsp;
+                <li><button id="showStudents" class="optionButton btn-outline-dark"
+                        onclick="displaystudentsList()"><u>Student List</u></button></li> &nbsp;
+                <li><button id="showMentors" class="optionButton btn-outline-dark"
+                        onclick="displayMentorsList()"><u>Mentors List</u></button></li> &nbsp;
+                        &nbsp;
+                <li><button id="showMentorsWithStudents" class="optionButton btn-outline-dark"
+                        onclick="displayMentorsListWithStudents()"><u>Mentors List with Students</u></button></li>
+            </ul>
+        </div>
+
+
+        <div class="row m-5 ">
+            <div class="col">
+                <h1 class="text-secondary font-weight-bold ">Student Mentor Assignment</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div id="formField" class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 formContainer ml-3">
+                <form autocomplete="off" id="studentForm" onsubmit="addStudent()">
+                    <h3 style="font-family: cursive;">Add Student</h3>
+                    <input id="studentName" type="text" placeholder="Student Name" required>
+                    <input id="studentId" type="text" placeholder="Student Id" required>
+                    <input id="studentContact" type="tel" placeholder="Contact Number" required>
+                    <input id="studentEmail" type="email" placeholder="email Id" required>
+                    <input id="studentBatch" type="text" placeholder="Batch" required><br>
+                    <input type="submit" value="Add">
+                </form>
+
+                <form autocomplete="off" id="mentorForm" onsubmit="addMentor()">
+                    <h3 style="font-family: cursive;">Add Mentor</h3>
+                    <input id="mentorName" type="text" placeholder="Mentor Name" required>
+                    <input id="mentorId" type="text" placeholder="Mentor Id" required>
+                    <input id="mentorContact" type="tel" placeholder="Contact Number" required>
+                    <input id="mentorEmail" type="email" placeholder="email Id" required> <br>
+                    <input type="submit" value="Add">
+                </form>
+
+                <div class="listArea row"> </div>
+            </div>
+
+            <div id="chooseField" class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 ">
+                <div class="container chooseFiled ">
+                    <h3 id="info" style="font-family: cursive;"></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

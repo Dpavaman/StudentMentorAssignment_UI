@@ -1,0 +1,116 @@
+body{
+    background: url(./images/background.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.text-secondary{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: -1rem;
+}
+
+.formContainer{
+    width: 20%;
+    height: fit-content;
+    
+}
+
+.options{
+    list-style-type: none;
+    display: flex;
+    float: right;
+}
+
+.optionButton{
+    background: transparent;
+    border: none;
+    color: black;
+    font-size: 1rem;
+}
+
+
+.chooseFiled{
+    color: #2C3335;
+    display: grid;
+    font-size: 25px;
+    margin-left: 20%;
+    margin-top: 60%;
+}
+
+.cross{
+    color: white;
+    font-weight: bolder;
+    font-size: 2rem;
+    width: fit-content;
+    height: fit-content;
+    cursor: pointer;
+    transform: rotate(-45deg);
+    float: right;
+    padding: -1rem 1rem;
+    border: none;
+    outline: none;
+}
+
+.cross:hover{
+    color: greenyellow;
+}
+
+input[type=text], input[type = tel], input[type=email]
+{
+    background: transparent;
+    border: none;
+    text-align: center;
+    border-bottom: 1px solid black;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 40%;
+    margin: 10px;
+    outline: none;
+    height: 1rem;
+    padding: 1rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.card{
+    margin-top: 5%;;
+    border: 1px solid none;
+    width: 100%;
+    padding: 5px;
+    height: fit-content;
+    box-shadow: 10px 10px 5px #aaaaaa;
+    margin: 5%;
+}
+
+.assign-button{
+    width: fit-content;
+    margin-left: 80%;
+}
+
+.submit
+{
+    display: block;
+    float: right;
+    margin: 2rem 7rem ;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    font-weight: bolder;
+    border: none;
+    background: rebeccapurple;
+    font-size: 1rem;
+    color: white;
+    transition: 0.8s;
+    outline: none;
+}
+
+.submit:hover
+{
+    transform: rotate(360deg);
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+}
+
+ul{
+    list-style-type: none;
+}
