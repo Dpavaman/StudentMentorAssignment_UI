@@ -17,7 +17,7 @@ async function addStudent() {
         mentorAssigned: false,
         mentorName: "Not Assigned"
     };
-    await fetch("https://student-mentor-assign-backend.herokuapp/student", {
+    await fetch("https://student-mentor-assign-backend.herokuapp.com/student", {
         method: "POST",
         body: JSON.stringify(data),
         headers: {
@@ -37,7 +37,7 @@ async function addMentor() {
         email: document.getElementById("mentorEmail").value,
         students: []
     }
-    await fetch("https://student-mentor-assign-backend.herokuapp/mentor", {
+    await fetch("https://student-mentor-assign-backend.herokuapp.com/mentor", {
         method: "POST",
         body: JSON.stringify(data),
         headers: {
@@ -53,7 +53,7 @@ async function assignStudents() {
         mentor: selectedMentor,
         studentName: assignThisStudent
     }
-    await fetch('https://student-mentor-assign-backend.herokuapp/mentor/addStudent', {
+    await fetch('https://student-mentor-assign-backend.herokuapp.com/mentor/addStudent', {
         method: 'PUT',
         body: JSON.stringify(data),
         headers: {
@@ -63,7 +63,7 @@ async function assignStudents() {
 }
 
 async function fetchMentors() {
-    let response = await fetch("https://student-mentor-assign-backend.herokuapp/mentor");
+    let response = await fetch("https://student-mentor-assign-backend.herokuapp.com/mentor");
     let list = await response.json();
     list.forEach(element => {
         mentors.push(element)
