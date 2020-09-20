@@ -166,7 +166,7 @@ async function displayMentorsList() {
             card.innerHTML = `Mentor Name : ${element.name} <br> Id : ${element.id} <br> Contact Number : ${element.contact} <br> Email : ${element.email}`;
 
             let button = document.createElement('button');
-            button.classList.add('btn', 'btn-primary', /* 'assign-button' */);
+            button.classList.add('btn', 'btn-primary' /* 'assign-button' */);
             button.innerHTML = `Assign new students`;
             button.id = `${element.name}`;
             button.addEventListener('click', () => {
